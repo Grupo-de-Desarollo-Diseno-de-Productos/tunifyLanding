@@ -1,0 +1,23 @@
+{
+  "name": "tunifyLanding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dataBase.js",
+  "scripts": {
+    "build": "node dataBase.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grupo-de-Desarollo-Diseno-de-Productos/tunifyLanding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grupo-de-Desarollo-Diseno-de-Productos/tunifyLanding/issues"
+  },
+  "homepage": "https://github.com/Grupo-de-Desarollo-Diseno-de-Productos/tunifyLanding#readme",
+  "dependencies": {
+    "firebase": "^10.6.0"
+  }
+}
