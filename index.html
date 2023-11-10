@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="icon" type="image/svg+xml" href="images/loguito.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tunify</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/"><img style='height: 10%; width: 50%; object-fit: contain' src="images/logo.png"
+                alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Prototipo</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Contact</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Prototipo</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    <div class="containerVid">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="images/1100568789-preview.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Practica música a tu ritmo</h1>
+            <div style="display: flex; gap: 5%; justify-content:center">
+                <a href="#info">Saber más</a>
+                <a id="call2act" href="#" onclick="activePopup()">Comienza tu viaje musical</a>
+            </div>
+        </div>
+    </div>
+    <main id="info">
+        <section class="padding-block-900">
+            <div class="container">
+                <div class="even-columns">
+                    <div class="flow">
+                        <h1 class="fs-primary-heading fw-bold">Descubre una nueva forma de aprender música, hecha
+                            exclusivamente para ti.</h1>
+                        <p>En Tunify creemos en el poder del aprendizaje personalizado. Sabemos que los músicos por
+                            hobby a menudo se sienten abrumados por terminologías complicadas y herramientas difíciles
+                            de entender. Es por eso que hemos creado una plataforma diseñada para adaptarse a ti, a tu
+                            ritmo y a tus necesidades.</p>
+                    </div>
+                    <div>
+                        <img style="height: 100%; width: 100%; object-fit: contain" src="images/music_notes_PNG3.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="display: flex; gap: 5%; justify-content:center">
+            <button class="button" id="show-login" onclick="activePopup()">Comienza tu viaje musical</button>
+        </div>
+        <section class="padding-block-900">
+            <div class="container">
+                <div class="even-columns">
+                    <div class="flow">
+                        <h2 class="fs-secondary-heading fw-bold">¿Por qué Tunify es diferente?</h2>
+                        <p>Hacemos que el aprendizaje musical sea una experiencia personalizada y emocionante</p>
+                    </div>
+                    <div>
+                        <ul class="numbered-items | flow" role="list">
+                            <li>
+                                <div class="flow" style="--flow-spacer: 1em">
+                                    <h3 class="fs-600 fw-bold">Dificultad Incremental</h3>
+                                    <p data-width="wide">Adiós a la frustración. Nuestra plataforma se ajusta a tu nivel
+                                        de habilidad, ofreciéndote ejercicios con dificultad incremental. Desde
+                                        principiante hasta maestro, siempre estarás desafiándote a ti mismo de manera
+                                        adecuada.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flow" style="--flow-spacer: 1em">
+                                    <h3 class="fs-600 fw-bold">Ejercicios Personalizados</h3>
+                                    <p data-width="wide">Tu viaje musical es único. Nosotros lo entendemos. Enfócate en
+                                        las habilidades específicas que deseas mejorar. Nada de lecciones genéricas,
+                                        aquí todo es sobre lo que quieres lograr.</p>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flow" style="--flow-spacer: 1em">
+                                    <h3 class="fs-600 fw-bold">Interacción en Tiempo Real</h3>
+                                    <p data-width="wide">¿Te preguntas cómo suena tu ejecución? No tienes que esperar.
+                                        Obtén retroalimentación inmediata sobre tu desempeño musical. Porque el
+                                        aprendizaje es más efectivo cuando es en tiempo real.</p>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="popup" id="popup">
+            <div class="popup_inner">
+                <div class="popContainer">
+                    <div class="form">
+                        <form action="">
+                            <h2>Suscríbete a nuestro newsletter</h2>
+                            <div class="form-element">
+                                <div class="input-box">
+                                    <input type="text" class="input-field" placeholder="Nombre" id="nomBox">
+                                    <i class="bx bx-user"></i>
+                                </div>
+                                <p>&nbsp;</p>
+                                <div class="input-box">
+                                    <input type="text" class="input-field" placeholder="Email" id="emaBox">
+                                    <i class="bx bx-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="form-element">
+                                <button class="button" name="Submit" type="submit" onclick="JavaScript:enviar()"
+                                    value="Subscribe"></input>
+                            </div>
+                            <a onclick="deactivatePopup()">No, gracias</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+    <script type="module" src="dataBase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+
+
+</body>
+
+</html>
