@@ -60,6 +60,7 @@ html {
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+
 * {
   padding: 0;
   margin: 0;
@@ -127,7 +128,7 @@ svg {
   font-size: 95px;
   color: #fff;
   margin-bottom: 50px;
-  font-weight:600;
+  font-weight: 600;
   font-family: "Montserrat";
 }
 
@@ -335,6 +336,7 @@ header {
   display: grid;
   gap: 1rem;
   display: flex;
+  margin: 2rem;
 }
 
 :where(.flow :not(:first-child)) {
@@ -348,7 +350,6 @@ header {
 
 
 .button {
-  display: inline-flex;
   cursor: pointer;
   text-decoration: none;
   border: 0;
@@ -428,14 +429,14 @@ header {
 }
 
 .popup_outer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .popContainer {
@@ -482,7 +483,6 @@ header {
 
 .popup .form .form-element button {
   width: 100%;
-  height: 40px;
   border: none;
   outline: none;
   font-size: 16px;
@@ -586,7 +586,12 @@ footer {
   }
 
   .button {
-    font-size: 90%; /* Adjust button font size */
+    font-size: 90%;
+    /* Adjust button font size */
+  }
+
+  .content{
+    margin: 2rem;
   }
 }
 
@@ -595,14 +600,4 @@ picture,
 svg {
   max-width: 100%;
   height: auto;
-}
-
-@media only screen and (max-width: 800px) {
-  .row {
-    flex-direction: column;
-  }
-
-  .column {
-    width: 100%;
-  }
 }
