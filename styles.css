@@ -1,6 +1,6 @@
 :root {
-  --clr-accent-500: hsl(210, 60%, 45%);
-  --clr-accent-400: hsl(210, 88%, 59%);
+  --clr-accent-500: hsl(192, 100%, 33%);
+  --clr-accent-400: hsl(192, 100%, 33%);
   --clr-accent-300: hsla(210, 88%, 75%, 0.25);
   --clr-accent-100: hsl(13, 100%, 96%);
 
@@ -498,6 +498,10 @@ header {
   top: -35px;
   left: 17px;
   color: #fff;
+}
+
+.input-box input::placeholder {
+  color: #888;
 }
 
 .form-element {
