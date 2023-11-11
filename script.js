@@ -7,7 +7,7 @@ function activePopup(){
 
 function deactivatePopup(){
     var popup = document.getElementById('popup');
-    popup.style.display = 'none';
+    popup.style.display = 'none'
 }
 document.addEventListener("DOMContentLoaded", function() {
   const doc = document;
