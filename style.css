@@ -516,3 +516,24 @@ header {
 ::-webkit-input-placeholder{
   color: #fff;
 }
+
+
+footer {
+  background-color: #24252a
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#persona {
+  color: #edf0f1;
+}
