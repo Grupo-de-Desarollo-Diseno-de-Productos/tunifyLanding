@@ -54,7 +54,9 @@
   }
 }
 
-html { scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;
@@ -95,6 +97,7 @@ svg {
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .close {
     font-size: 40px;
     top: 15px;
@@ -103,10 +106,12 @@ svg {
 }
 
 @media only screen and (max-width: 800px) {
+
   .nav__links,
   .cta {
     display: none;
   }
+
   .menu {
     display: initial;
   }
@@ -277,6 +282,7 @@ header {
 .overlay a:focus {
   color: #0088a9;
 }
+
 .overlay .close {
   position: absolute;
   top: 20px;
@@ -290,6 +296,7 @@ header {
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .close {
     font-size: 40px;
     top: 15px;
@@ -298,10 +305,12 @@ header {
 }
 
 @media only screen and (max-width: 800px) {
+
   .nav__links,
   .cta {
     display: none;
   }
+
   .menu {
     display: initial;
   }
@@ -376,7 +385,7 @@ header {
   font-size: var(--fs-650);
 }
 
-.popup{
+.popup {
   display: none;
   position: fixed;
   width: 100%;
@@ -389,7 +398,9 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.popup_inner{
+
+
+.popup_inner {
   position: static;
   left: 25%;
   right: 25%;
@@ -425,7 +436,7 @@ header {
   text-align: center;
 }
 
-.popup .close-btn{
+.popup .close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -433,29 +444,29 @@ header {
   height: 15px;
   background: #888;
   color: #eee;
-  text-align:center;
+  text-align: center;
   line-height: 15px;
   border-radius: 15px;
   cursor: pointer;
 }
 
-.popup .form h2{
+.popup .form h2 {
   text-align: center;
   color: #222;
   margin: 10px 0px 20px;
   font-size: 25px;
 }
 
-.popup .form .form-element{
+.popup .form .form-element {
   margin: 15px 0px;
 }
 
-.popup .form .form-element label{
+.popup .form .form-element label {
   font-size: 14px;
   color: #222;
 }
 
-.popup .form .form-element button{
+.popup .form .form-element button {
   width: 100%;
   height: 40px;
   border: none;
@@ -467,7 +478,7 @@ header {
   cursor: pointer;
 }
 
-.input-box i{
+.input-box i {
   position: relative;
   height: 120%;
   top: -35px;
@@ -475,7 +486,7 @@ header {
   color: #fff;
 }
 
-.form-element{
+.form-element {
   position: relative;
   left: 4px;
   width: 95%;
@@ -485,12 +496,12 @@ header {
   transition: .5s ease-in-out;
 }
 
-.form-element p{
+.form-element p {
   font-size: 8px;
 
 }
 
-.input-field{
+.input-field {
   font-size: 15px;
   color: #000;
   text-decoration: none;
@@ -501,19 +512,20 @@ header {
   width: 100%;
   height: 100%;
   padding: 0 10px 0 10%;
-  
+
 }
-.input-field:hover{
-  border: 2px solid ;
+
+.input-field:hover {
+  border: 2px solid;
   border-radius: 20px;
   background: #fff;
 }
 
-.input-field:focus{
+.input-field:focus {
   border: 2px solid #000;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
   color: #fff;
 }
 
@@ -536,4 +548,43 @@ footer {
 
 #persona {
   color: #edf0f1;
+}
+
+@media only screen and (max-width: 800px) {
+
+  /* Your mobile styles go here */
+  .nav__links,
+  .cta {
+    display: none;
+  }
+
+  .menu {
+    display: initial;
+  }
+
+  .content h1 {
+    font-size: 60px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .button {
+    font-size: 90%; /* Adjust button font size */
+  }
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
 }

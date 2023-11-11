@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <title>Tunify</title>
 </head>
@@ -22,8 +23,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
     <header id="inicio">
-        <a class="logo" href="/" id = "top"><img style='height: 10%; width: 50%; object-fit: contain' src="images/logo.png"
-                alt="logo"></a>
+        <a class="logo" href="/" id="top"><img style='height: 10%; width: 50%; object-fit: contain'
+                src="images/logo.png" alt="logo"></a>
         <nav>
             <ul class="nav__links">
                 <li><a href="#">Prototipo</a></li>
@@ -42,7 +43,7 @@
     </div>
     <div class="containerVid">
         <video autoplay loop muted plays-inline class="background-clip">
-            <source src="images/1100568789-preview.mp4" type="video/mp4">
+            <source src="images/videoPagina.mp4" type="video/mp4">
         </video>
         <div class="content">
             <h1>Practica música a tu ritmo</h1>
@@ -117,18 +118,20 @@
             </div>
         </section>
         <footer style="padding: 5%; display: block;">
-            <div class = "row" style="display: flex; vertical-align: center;">
+            <div class="row" style="display: flex; vertical-align: center;">
                 <div class="column" style="display: flex; vertical-align: center; justify-content: center;">
-                    <a class="logo" href="/" style="display: flex; justify-content: center; vertical-align: center; margin:auto"><img style='height: 50%; width: 40%; object-fit: contain' src="images/logo.png"
-                    alt="logo"></a>
+                    <a class="logo" href="/"
+                        style="display: flex; justify-content: center; vertical-align: center; margin:auto"><img
+                            style='height: 50%; width: 40%; object-fit: contain' src="images/logo.png" alt="logo"></a>
                 </div>
-                <div class="column row" style="display: flex; vertical-align: center; justify-content: center; color: white;">
+                <div class="column row"
+                    style="display: flex; vertical-align: center; justify-content: center; color: white;">
                     <ul>
-                        <li><a id = "persona" href="mailto:s.chamie@uniandes.edu.co">Santiago Chamie</a></li>
-                        <li><a id = "persona" href="mailto:d.vargasu@uniandes.edu.co">Daniel Vargas</a></li>
-                        <li><a id = "persona" href="mailto:d.escalante@uniandes.edu.co">Daniel Escalante</a></li>
-                        <li><a id = "persona" href="mailto:m.pachecom2@uniandes.edu.co">Manuela Pacheco</a></li>
-                        <li><a id = "persona" href="mailto:l.torresg@uniandes.edu.co">Luis Torres</a></li>
+                        <li><a id="persona" href="mailto:s.chamie@uniandes.edu.co">Santiago Chamie</a></li>
+                        <li><a id="persona" href="mailto:d.vargasu@uniandes.edu.co">Daniel Vargas</a></li>
+                        <li><a id="persona" href="mailto:d.escalante@uniandes.edu.co">Daniel Escalante</a></li>
+                        <li><a id="persona" href="mailto:m.pachecom2@uniandes.edu.co">Manuela Pacheco</a></li>
+                        <li><a id="persona" href="mailto:l.torresg@uniandes.edu.co">Luis Torres</a></li>
                     </ul>
                 </div>
             </div>
@@ -138,31 +141,34 @@
         </footer>
 
         <div class="popup" id="popup">
-            <div class="popup_inner">
-                <div class="popContainer">
-                    <div class="form">
-                        <form action="">
-                            <h2>Suscríbete a nuestro newsletter</h2>
-                            <div class="form-element">
-                                <div class="input-box">
-                                    <input type="text" class="input-field" placeholder="Nombre" id="nomBox">
-                                    <i class="bx bx-user"></i>
+            <div class="popup_outer">
+                <div class="popup_inner">
+                    <div class="popContainer">
+                        <div class="form">
+                            <form action="">
+                                <h2>Suscríbete a nuestro newsletter</h2>
+                                <div class="form-element">
+                                    <div class="input-box">
+                                        <input type="text" class="input-field" placeholder="Nombre" id="nomBox">
+                                        <i class="bx bx-user"></i>
+                                    </div>
+                                    <p>&nbsp;</p>
+                                    <div class="input-box">
+                                        <input type="text" class="input-field" placeholder="Email" id="emaBox">
+                                        <i class="bx bx-envelope"></i>
+                                    </div>
                                 </div>
-                                <p>&nbsp;</p>
-                                <div class="input-box">
-                                    <input type="text" class="input-field" placeholder="Email" id="emaBox">
-                                    <i class="bx bx-envelope"></i>
+                                <div class="form-element">
+                                    <button style="color: white;" class="button" id="enviar" value="Subscribe"></button>
                                 </div>
-                            </div>
-                            <div class="form-element">
-                                <button style="color: white;" class="button" id = "enviar" value="Subscribe"></button>
-                            </div>
-                            <a onclick="deactivatePopup()">No, gracias</a>
-                        </form>
+                                <a onclick="deactivatePopup()">No, gracias</a>
+                            </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+
 
     </main>
 
