@@ -62,10 +62,35 @@ function getPk() {
 }
 
 function writeUserData(pk, name, email) {
+    let nivel = getRadio();
     set(ref(database, 'suscrito/' + pk), {
       name: name,
       email: email,
+      habilidad: nivel
     });
+    limpiar();
   }
 
+function getRadio() {
+  var inputs = document.getElementsByTagName('input');
+  for(var i = 0; i < inputs.length; i++) {
+    if(inputs[i].type.toLowerCase() == 'radio') {
+        if (inputs[i].checked){
+            return inputs[i].value;
+        }
+    }
+  }
+  return '';
+}
+
+function limpiar() {
+  var inputs = document.getElementsByTagName('input');
+  for(var i = 0; i < inputs.length; i++) {
+    if(inputs[i].type.toLowerCase() == 'radio') {
+        if (inputs[i].checked){
+          inputs[i].checked = false;
+        }
+    }
+  }
+}
 

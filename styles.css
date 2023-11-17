@@ -603,3 +603,9 @@ svg {
   max-width: 100%;
   height: auto;
 }
+
+
+.radioLabel{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
